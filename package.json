@@ -1,0 +1,26 @@
+{
+  "name": "brotherblake.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"nodemon server.js\" \"cd client && npm start\"",
+    "heroku-postbuild": "cd client && npm run build && NODE_ENV=production node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blakelmason/brotherblake.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blakelmason/brotherblake.com/issues"
+  },
+  "homepage": "https://github.com/blakelmason/brotherblake.com#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4"
+  }
+}
