@@ -6,7 +6,7 @@ const routes = require('./routes');
 
 // express setup
 const server = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 // body parser configuration
 server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
