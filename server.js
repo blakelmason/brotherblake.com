@@ -15,11 +15,10 @@ server.use(bodyParser.json());
 //routes
 server.use(routes);
 
-if (process.env.NODE_ENV === 'production') {
-  server.use("/", express.static(__dirname + "/client/build"));
-
-  server.get('*', function (req, res) {
-    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+  app.get("*", function (req, res) {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"));
   });
 }
 
