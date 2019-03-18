@@ -12,7 +12,7 @@ const Welcome = () => {
       <Scripture r="Matthew 13 : 3 - 8" />
       <p>Then later in verse 19, Jesus gives the interpretation for the seeds that "fell by the wayside" as described in verse 4.</p>
       <Scripture r="Matthew 13 : 19" />
-      <p>Here we learn from the Savior that one of the dangers we face is to lack a sufficient understanding of his words. I pray to our Father that you will be inspired by the Holy Ghost, and receive understanding through his presence, that you may be protected in the moments that the adversary attempts to take away the seed of faith which has been sown in your heart, and I do so in the name of Jesus Christ.</p>
+      <p>Here we learn from the Savior that one of the dangers we face is to lack a sufficient understanding of his words. I pray to our Father that you will be inspired by the Holy Ghost, and receive understanding through his presence, that you will be protected in the moments when the adversary attempts to "catcheth away" the seed of faith sown in your heart, and I do so in the name of Jesus Christ.</p>
       <br />
       <br />
       <p>Thank you for visiting, and I hope that what you find here will bring you light and truth!</p>
