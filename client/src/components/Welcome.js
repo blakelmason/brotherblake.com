@@ -18,7 +18,7 @@ const Welcome = () => {
       <p>Thank you for visiting, and I hope that what you find here will bring you light and truth!</p>
       <br />
       <br />
-      <h4>- Brother Blake</h4>
+      <p>- Brother Blake</p>
     </Article>
   )
 }
