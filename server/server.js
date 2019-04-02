@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require("body-parser");
 const path = require('path');
 const routes = require('./routes');
+import models from '../db/models'
 
 // express setup
 const server = express();
@@ -22,6 +23,8 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-server.listen(PORT, function () {
-  console.log(`🌎  ==> Server listening on PORT ${PORT}!`);
+models.sequelize.sync().then(function () {
+  server.listen(PORT,
+    () => console.log(`🌎  ==> Server listening on PORT ${PORT}!`)
+  )
 });

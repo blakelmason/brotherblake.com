@@ -3,6 +3,7 @@ import { Transition } from 'react-transition-group';
 import { FaTimes } from 'react-icons/fa'
 import { jsx } from '@emotion/core'
 import { Button } from 'react-bootstrap';
+import Body from './Body'
 
 const timeout = 400;
 const width = 300;
@@ -13,7 +14,6 @@ const styleSidebar = {
   height: '150%',
   transition: 'all 0.5s ease 0s',
   transform: 'translate3d(-100%, 0px, 0px)',
-  overflow: 'auto',
   zIndex: 1100
 }
 const transitionsSidebar = {
@@ -85,49 +85,41 @@ const Sidebar = ({ inProp, close }) => (
             ...transitionsSidebar[state]
           }}
         >
-          <div style={{ overflow: 'auto', flexGrow: '1', whiteSpace: 'nowrap', height: '100vh' }}>
-            <div className="m-3 d-flex align-items-center justify-content-end">
+          <div style={{ flexGrow: '1', height: '100vh' }} className="d-flex flex-column">
+            <div
+              className="d-flex align-items-center justify-content-end position-absolute"
+              style={{ width: 300, padding: '12px 16px 12px 0px', pointerEvents: 'none' }}
+            >
               <Button
+                onClick={close}
                 variant="outline-light"
                 css={{
+                  background: 'white',
+                  transition: 'color .3s',
                   borderRadius: '50%',
-                  padding: 6
+                  padding: 6,
+                  '&:hover': {
+                    color: 'black',
+                    background: '#f8f9fa'
+                  },
+                  zIndex: 1,
+                  pointerEvents: 'auto'
                 }}
-                className="shadow border d-flex align-items-center"
+                className="shadow border d-flex align-items-center text-grey"
               >
-                <FaTimes
-                  size="1.25rem"
-                  onClick={close}
-                  css={{
-                    transform: 'scale(1)',
-                    color: '#969696',
-                    transition: 'color .8s',
-                    borderRadius: '50%',
-                    cursor: 'pointer',
-                    '&:hover': {
-                      color: 'black'
-                    }
-                  }}
-                  className="text-grey"
-                />
+                <FaTimes size="1.25rem" />
               </Button>
             </div>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-
+            <div style={{ overflowY: 'auto', paddingTop: 5 }} className="flex-fill px-3 pb-3 bg-light" >
+              <div style={{ height: 75 }} />
+              <div style={{
+                display: 'grid',
+                gridRowGap: 16
+              }}
+              >
+                <Body />
+              </div>
+            </div>
           </div>
         </div>
       </div>

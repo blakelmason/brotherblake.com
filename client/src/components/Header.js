@@ -8,6 +8,7 @@ const Header = () => {
   return (
     <div style={{ height: 200 }} className="border-bottom">
       <Image src={header} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
+      <div id="header" />
     </div>
   )
 }

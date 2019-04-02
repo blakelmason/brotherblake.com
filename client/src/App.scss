@@ -8,6 +8,16 @@ body {
   background: #f1f1f1;
 }
 
+.active {
+  text-decoration: underline;
+  &:hover {
+    text-decoration: underline!important;
+  }
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
 .article > p, h2 {
   padding: 0px 8px 0px 8px;
 }

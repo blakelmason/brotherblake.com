@@ -23,7 +23,8 @@ const Scripture = (props) => {
     }
     url += `${start}-${end}?lang=eng`;
   } else {
-    verses.push(scriptures[book][chapter - 1][split[1] - 1]);
+    const text = scriptures[book][chapter - 1][split[1] - 1];
+    verses.push(<Verse number={split[1]} text={text} key={uuid.v4()} />);
     url += `${split[1]}?lang=eng`;
   }
 

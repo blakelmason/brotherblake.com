@@ -1,53 +1,61 @@
 import React, { Component } from 'react';
 import './App.scss';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Sidebar from './components/Sidebar';
-import Menu from './components/Menu';
+import { Route, Switch, withRouter } from "react-router-dom";
+import { AppContext } from './Context'
+import Sidebar from './components/Sidebar/Sidebar';
+import Navbar from './components/Navbar/Navbar';
 import Backdrop from './components/Backdrop';
 import Home from './components/Home';
-
-const mql = window.matchMedia(`(min-width: 800px)`);
+import Scriptures from './components/Scriptures'
+import Updates from './components/Updates'
+import Topics from './components/Topics'
 
 class App extends Component {
-  state = {
-    sidebar: false
+  static contextType = AppContext;
+  constructor(props) {
+    super(props);
+    this.state = {
+      sidebar: true,
+      title: 'Home',
+      actions: {
+        setTitle: this.setTitle,
+        closeSidebar: this.closeSidebar
+      }
+    }
   }
 
-  componentWillMount() {
-    mql.addListener(this.mediaQueryChanged);
-  }
-
-  componentWillUnmount() {
-    this.state.mql.removeListener(this.mediaQueryChanged);
-  }
-
-  onSetSidebarOpen = (open) => {
-    this.setState({ sidebarOpen: open });
-  }
-
-  mediaQueryChanged = () => {
-    this.setState({ sidebarDocked: mql.matches, sidebarOpen: false });
-  }
+  setTitle = (title) => this.setState({ title: title });
+  closeSidebar = () => this.setState({ sidebar: false })
 
   render() {
-    const { sidebar } = this.state;
+    const { sidebar, title, actions } = this.state;
     return (
-      <Router>
+      <AppContext.Provider value={actions}>
         <div className="row d-flex no-gutters">
-          <div className="col-auto">
-            <Sidebar inProp={sidebar} close={() => this.setState({ sidebar: false })} />
-          </div>
+          <Route path={'/'} exact children={({ match }) =>
+            !match &&
+            <div className="col-auto">
+              <Sidebar inProp={sidebar} close={() => this.setState({ sidebar: false })} />
+            </div>
+          }
+          />
           <div className="col-auto col-xl">
             <Backdrop />
-            <Menu sidebar={() => this.setState({ sidebar: true })} />
-            <Route path="/" exact component={Home} />
-            {/* <Route path="/updates" component={Updates} />
-        <Route path="/test" component={Test} /> */}
+            <Navbar
+              sidebar={() => this.setState({ sidebar: !sidebar })}
+              title={title}
+            />
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/updates" component={Updates} />
+              <Route path="/scriptures" component={Scriptures} />
+              <Route path="/topics" component={Topics} />
+            </Switch>
           </div>
         </div>
-      </Router >
+      </AppContext.Provider>
     );
   }
 }
 
-export default App;
+export default withRouter(App);
