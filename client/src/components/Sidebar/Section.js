@@ -6,7 +6,9 @@ const Section = ({ children }) => {
       className="border d-flex align-items-center justify-content-center bg-white"
       style={{ height: 45 }}
     >
-      {children}
+      <h5 className="m-0">
+        {children}
+      </h5>
     </div>
   )
 };

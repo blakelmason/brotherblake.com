@@ -1,10 +1,10 @@
 /** @jsx jsx */
-import { useContext } from 'react'
 import { jsx } from '@emotion/core'
+import { useContext } from 'react'
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { AppContext } from '../Context'
 
-const NavItem = ({ display, to, exact }) => {
+const NavItem = ({ display, to, exact, className, style }) => {
   const context = useContext(AppContext);
   function home() {
     window.scrollTo(0, 0)
@@ -19,13 +19,14 @@ const NavItem = ({ display, to, exact }) => {
       }}
       exact={exact}
       to={to}
-      className="nav-link w-100 text-center text-grey"
-      activeClassName="active disabled text-dark"
       css={{
         '&:hover': {
           color: 'black'
         }
       }}
+      className={`nav-link w-100 h-100 ${className}`}
+      style={style}
+      activeClassName="active disabled text-dark"
     >{display}</NavLink>
   );
 }

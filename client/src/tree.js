@@ -10,17 +10,6 @@ const tree = {
           ]
         }
       ]
-    },
-    {
-      value: 2018,
-      months: [
-        {
-          value: 'April',
-          days: [
-            { value: 10 }
-          ]
-        }
-      ]
     }
   ],
   scriptures: {},

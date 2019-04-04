@@ -18,7 +18,7 @@ const Navbar = ({ sidebar, title }) => {
   return (
     <div className="sticky-top">
       <div className="shadow bg-white border-bottom py-1 px-md-4 px-lg-5 position-relative">
-        <div style={{ maxWidth: 1300 }} className="m-auto py-lg-1">
+        <div style={{ maxWidth: 1300 }} className="m-auto py-0 py-xl-1">
           <Route
             path="/"
             exact
@@ -27,7 +27,7 @@ const Navbar = ({ sidebar, title }) => {
                 <>
                   {
                     match &&
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' }} className="px-2 px-md-1">
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' }} className="px-2 px-md-1 text-center">
                       <NavItem display="Home" to="/" />
                       <NavItem display="Updates" to="/updates" />
                       <NavItem display="Scriptures" to="/scriptures" />
@@ -97,16 +97,24 @@ const Navbar = ({ sidebar, title }) => {
           <div className="d-flex justify-content-center">
             <div style={{ maxWidth: 1300 }} className="flex-fill">
               <div
-                className="bg-white border-bottom border-right border-left shadow rounded-bottom mx-1 mx-md-3 mx-lg-4 py-1 py-lg-2"
+                className="bg-white border-bottom border-right border-left shadow rounded-bottom mx-1 mx-md-3 mx-lg-4 py-1 py-lg-2 text-center"
                 style={{
                   display: 'grid',
                   gridTemplateColumns: 'repeat(4, 1fr)'
                 }}
               >
-                <NavItem display="Home" to="/" />
-                <NavItem display="Updates" to="/updates" />
-                <NavItem display="Scriptures" to="/scriptures" />
-                <NavItem display="Topics" to="/topics" />
+                <div onClick={toggle}>
+                  <NavItem exact display="Home" to="/" />
+                </div>
+                <div onClick={toggle}>
+                  <NavItem display="Updates" to="/updates" />
+                </div>
+                <div onClick={toggle}>
+                  <NavItem display="Scriptures" to="/scriptures" />
+                </div>
+                <div onClick={toggle}>
+                  <NavItem display="Topics" to="/topics" />
+                </div>
               </div>
             </div>
           </div>
