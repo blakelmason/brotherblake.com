@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import NavItem from '../NavItem';
-import list from '../pages/Updates/list';
+import list from '../../pages/Updates/list';
 
 const Updates = () => {
   return (

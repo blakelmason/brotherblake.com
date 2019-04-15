@@ -6,9 +6,9 @@ import Sidebar from './components/Sidebar/Sidebar';
 import Navbar from './components/Navbar/Navbar';
 import Backdrop from './components/Backdrop';
 import Home from './components/Home';
-import Scriptures from './components/pages/Scriptures/Scriptures';
-import Updates from './components/pages/Updates/Updates';
-import Topics from './components/pages/Topics/Topics';
+import Scriptures from './pages/Scriptures/Scriptures';
+import Updates from './pages/Updates/Updates';
+import Topics from './pages/Topics/Topics';
 import Header from './components/Header';
 
 class App extends Component {

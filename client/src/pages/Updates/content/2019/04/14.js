@@ -1,12 +1,17 @@
 import React from 'react';
-import Article from '../../../../../Article';
-import Video from '../../../../../Video';
-import Quote from '../../../../../Quote';
-import Scripture from '../../../../../Scripture';
+import Article from '../../../../../components/Article';
+import Video from '../../../../../components/Video';
+import Quote from '../../../../../components/Quote';
+import Scripture from '../../../../../components/Scripture';
 
 const Update = () => {
   return (
-    <Article title="April 14, 2019" image="https://i.ibb.co/xHMPCcZ/14.jpg">
+    <Article
+      title="April 14, 2019"
+      image="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/57125788_2108946819160314_2488181134186250240_o.jpg?_nc_cat=109&_nc_ht=scontent-lax3-2.xx&oh=eca1772a9faf3795827799df1e344145&oe=5D3F5D3C"
+      description="The First Update!"
+      url="http://www.brotherblake.com/updates/2019-April-14"
+    >
       <p>
         My first update! Just to get some content going, I thought I would share
         some of the information I compiled while preparing for a lesson this

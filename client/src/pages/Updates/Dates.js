@@ -1,6 +1,6 @@
 import React from 'react';
-import Article from '../../Article';
-import NavItem from '../../NavItem';
+import Article from '../../components/Article';
+import NavItem from '../../components/NavItem';
 import list from './list';
 
 const Dates = () => {

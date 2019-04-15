@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import moment from 'moment';
-import Loading from '../../Loading';
+import Loading from '../../components/Loading';
 import { Route, Switch } from 'react-router-dom';
 import Dates from './Dates';
 

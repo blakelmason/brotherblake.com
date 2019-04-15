@@ -7,7 +7,7 @@ import mq from './utils/mq';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { Button } from 'react-bootstrap';
 import NavItem from './NavItem';
-import list from './pages/Updates/list';
+import list from '../pages/Updates/list';
 
 const Header = () => {
   return (
