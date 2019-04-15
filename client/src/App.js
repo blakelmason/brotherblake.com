@@ -1,59 +1,75 @@
 import React, { Component } from 'react';
 import './App.scss';
-import { Route, Switch, withRouter } from "react-router-dom";
-import { AppContext } from './Context'
+import { Route, Switch, withRouter } from 'react-router-dom';
+import { APP } from './Context';
 import Sidebar from './components/Sidebar/Sidebar';
 import Navbar from './components/Navbar/Navbar';
 import Backdrop from './components/Backdrop';
 import Home from './components/Home';
-import Scriptures from './components/Scriptures'
-import Updates from './components/Updates'
-import Topics from './components/Topics'
+import Scriptures from './components/pages/Scriptures/Scriptures';
+import Updates from './components/pages/Updates/Updates';
+import Topics from './components/pages/Topics/Topics';
+import Header from './components/Header';
 
 class App extends Component {
-  static contextType = AppContext;
+  static contextType = APP;
   constructor(props) {
     super(props);
     this.state = {
-      sidebar: true,
-      title: 'Home',
+      title: '',
+      sidebar: false,
       actions: {
-        setTitle: this.setTitle,
-        closeSidebar: this.closeSidebar
+        sidebar: this.sidebar,
+        backdrop: this.backdrop
       }
-    }
+    };
   }
 
-  setTitle = (title) => this.setState({ title: title });
-  closeSidebar = () => this.setState({ sidebar: false })
+  componentDidMount() {
+    this.setState({
+      title: this.props.location.pathname.split('/')[1]
+    });
+  }
+
+  componentDidUpdate() {
+    const path = this.props.location.pathname.split('/')[1];
+    path !== this.state.title && this.setState({ title: path });
+  }
+
+  sidebar = () => this.setState({ sidebar: false });
 
   render() {
-    const { sidebar, title, actions } = this.state;
+    const { location } = this.props;
+    const { sidebar, actions, title } = this.state;
     return (
-      <AppContext.Provider value={actions}>
-        <div className="row d-flex no-gutters">
-          <Route path={'/'} exact children={({ match }) =>
-            !match &&
-            <div className="col-auto">
-              <Sidebar inProp={sidebar} close={() => this.setState({ sidebar: false })} />
-            </div>
-          }
-          />
-          <div className="col-auto col-xl">
-            <Backdrop />
+      <APP.Provider value={actions}>
+        <div className="row d-flex no-gutters mb-md-4 mb-lg-5">
+          <div className="col-auto">
+            <Sidebar
+              inProp={sidebar}
+              close={() => this.setState({ sidebar: false })}
+            />
+          </div>
+          <div className="col-auto col-xl w-100">
+            <Header />
+            <Route path="/" exact component={Backdrop} />
             <Navbar
               sidebar={() => this.setState({ sidebar: !sidebar })}
               title={title}
+              menu={location.pathname === '/' ? false : true}
             />
             <Switch>
               <Route path="/" exact component={Home} />
-              <Route path="/updates" exact component={Updates} />
-              <Route path="/scriptures" exact component={Scriptures} />
-              <Route path="/topics" exact component={Topics} />
+              <Route
+                path="/updates"
+                render={() => <Updates path={location.pathname} />}
+              />
+              <Route path="/scriptures" component={Scriptures} />
+              <Route path="/topics" component={Topics} />
             </Switch>
           </div>
         </div>
-      </AppContext.Provider>
+      </APP.Provider>
     );
   }
 }

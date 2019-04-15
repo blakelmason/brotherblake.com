@@ -1,55 +1,37 @@
-/** @jsx jsx */
-import { jsx } from '@emotion/core';
-// eslint-disable-next-line
 import React from 'react';
-import Section from './Section';
-import Dropdown from './Dropdown';
+import Header from './Header';
 import NavItem from '../NavItem';
+import list from '../pages/Updates/list';
 
-const Updates = ({ years }) => {
+const Updates = () => {
   return (
     <>
-      <Section>Updates</Section>
-      <div className="border-top border-right border-left">
-        {
-          years.map(year =>
-            <Dropdown value={year.value} key={year.value}>
-              {
-                year.months.map(month =>
-                  <Dropdown value={<div className="pl-2">{month.value}</div>} key={year.value + month.value}>
-                    {
-                      month.days.map(day =>
-                        <div
-                          className="bg-white border-bottom d-flex align-items-center"
-                          style={{ height: 45 }}
-                          key={year.value + month.value + day.value}
-                          css={{
-                            cursor: 'pointer',
-                            transition: 'background ',
-                            '&:hover': {
-                              background: '#f0f2f4!important'
-                            }
-                          }}
-                        >
-                          <NavItem
-                            exact
-                            to={`/updates/${year.value}/${month.value.toLowerCase()}/${day.value}`}
-                            display={`${month.value} ${day.value}`}
-                            className="d-flex align-items-center"
-                            style={{ paddingLeft: 32 }}
-                          />
-                        </div>
-                      )
-                    }
-                  </Dropdown>
-                )
-              }
-            </Dropdown>
-          )
-        }
+      <Header>
+        <NavItem
+          to="/updates"
+          display="Updates"
+          className="h5 mb-0 text-center d-flex align-items-center justify-content-center text-dark"
+          style={{ height: 45 }}
+          exact
+        />
+      </Header>
+      <div className="border-top border-right border-left bg-white">
+        {list.map(date => (
+          <Update key={`Sidebar${date}`} date={date} />
+        ))}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Updates
+const Update = ({ date }) => {
+  return (
+    <NavItem
+      to={`/updates/${date.format('YYYY-MMMM-D')}`}
+      display={`${date.format('MMMM D')}`}
+      className="border-bottom"
+    />
+  );
+};
+
+export default Updates;
