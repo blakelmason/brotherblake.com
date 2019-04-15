@@ -4,12 +4,14 @@ import { Helmet } from 'react-helmet';
 
 const Article = ({ title, children, image, description, url }) => {
   return (
-    <Helmet>
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
-      <meta property="og:url" content={url} />
-      <meta property="og:site_name" content="BrotherBlake.com" />
+    <>
+      <Helmet>
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={image} />
+        <meta property="og:url" content={url} />
+        <meta property="og:site_name" content="BrotherBlake.com" />
+      </Helmet>
       <div className="row no-gutters m-md-4 m-lg-5">
         <div className="col px-0 d-flex justify-content-center">
           <div
@@ -37,7 +39,7 @@ const Article = ({ title, children, image, description, url }) => {
           </div>
         </div>
       </div>
-    </Helmet>
+    </>
   );
 };
 
