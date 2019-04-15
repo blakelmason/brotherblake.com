@@ -13,8 +13,8 @@ server.use(bodyParser.json());
 
 if (process.env.NODE_ENV === 'production') {
   server.use(express.static(path.join(__dirname, '..', '/client/build')));
-  server.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname, '..', '/client/build/index.js'));
+  server.get('*', function(req, res) {
+    res.sendFile(path.join(__dirname, '..', '/client/build/index.html'));
   });
 }
 
