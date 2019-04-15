@@ -8,8 +8,7 @@
     "dev": "concurrently \"nodemon --exec babel-node server/server.js\" \"cd client && npm start\"",
     "heroku-postbuild": "npm install && cd client && npm install && npm run build",
     "start": "cd dist && node server.js",
-    "babel": "npx babel server --out-dir dist",
-    "update": "npm run babel && cd client && git push heroku master"
+    "babel": "npx babel server --out-dir dist"
   },
   "repository": {
     "type": "git",
