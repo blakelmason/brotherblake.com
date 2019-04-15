@@ -1,14 +1,18 @@
 "use strict";
 
+var _index = _interopRequireDefault(require("./routes/index.routes"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 require('dotenv').config();
 
 var express = require('express');
 
 var bodyParser = require('body-parser');
 
-var path = require('path'); // express setup
+var path = require('path');
 
-
+// express setup
 var server = express();
 var PORT = process && process.env && process.env.PORT || undefined || 3001; // body parser configuration
 
@@ -19,6 +23,7 @@ server.use(bodyParser.urlencoded({
 server.use(bodyParser.json());
 
 if ((process && process.env && process.env.NODE_ENV || undefined) === 'production') {
+  server.use(_index.default);
   server.use(express.static(path.join(__dirname, '..', '/client/build')));
   server.get('*', function (req, res) {
     res.sendFile(path.join(__dirname, '..', '/client/build/index.html'));
