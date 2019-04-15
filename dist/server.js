@@ -20,7 +20,7 @@ server.use(bodyParser.json());
 
 if ((process && process.env && process.env.NODE_ENV || undefined) === 'production') {
   server.use(express.static(path.join(__dirname, '..', '/client/build')));
-  server.get('*', function (req, res) {
+  server.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname, '..', '/client/build/index.js'));
   });
 }
