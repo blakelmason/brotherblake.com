@@ -27,7 +27,6 @@ router.get('/', function (request, response) {
     } // replace the special strings with server generated strings
 
 
-    data = data.replace(/\$TITLE/g, 'BrotherBlake.com');
     data = data.replace(/\$DESCRIPTION/g, 'Gospel Insights and Musings');
     data = data.replace(/\$OG_TITLE/g, 'BrotherBlake.com');
     data = data.replace(/\$OG_DESCRIPTION/g, 'Gospel Insights and Musings');
