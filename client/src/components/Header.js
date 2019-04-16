@@ -39,6 +39,12 @@ const Header = () => {
             <Button
               className="p-1 text-grey2 shadow border"
               variant="outline-light"
+              onClick={() =>
+                window.open(
+                  'https://www.facebook.com/brotherblakewebsite',
+                  '_blank'
+                )
+              }
             >
               <FaFacebook size="2.15rem" />
             </Button>
@@ -46,6 +52,12 @@ const Header = () => {
             <Button
               className="p-1 text-grey2 shadow border"
               variant="outline-light"
+              onClick={() =>
+                window.open(
+                  'https://www.instagram.com/brotherblakewebsite',
+                  '_blank'
+                )
+              }
             >
               <FaInstagram size="2.15rem" />
             </Button>
