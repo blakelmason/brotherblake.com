@@ -39,7 +39,7 @@ const Scripture = ({ r, children, edit }) => {
   }
 
   return (
-    <div className="border p-3 p-sm-4 shadow scripture my-4 my-lg-5 bg-white">
+    <div className="mx-2 mx-md-0 border p-3 p-sm-4 shadow scripture my-4 my-lg-5 bg-white">
       <h5>
         <a href={url} target="_blank" rel="noopener noreferrer">
           {r}

@@ -2,7 +2,7 @@ import React from 'react';
 import { Image } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 
-const Article = ({ title, children, image, description, url }) => {
+const Article = ({ title, children, image, description, url, position }) => {
   return (
     <>
       <Helmet>
@@ -25,7 +25,12 @@ const Article = ({ title, children, image, description, url }) => {
               <div style={{ height: 240 }} className="border-bottom">
                 <Image
                   src={image}
-                  style={{ height: '100%', width: '100%', objectFit: 'cover' }}
+                  style={{
+                    height: '100%',
+                    width: '100%',
+                    objectFit: 'cover',
+                    objectPosition: position && position
+                  }}
                 />
               </div>
             )}

@@ -11,7 +11,9 @@ const Quote = ({ url, children, link, image }) => {
       <div className="border p-2 p-md-3 shadow bg-white">
         {link && (
           <h5 className="text-center d-sm-none p-1">
-            <a href={url}>{link}</a>
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              {link}
+            </a>
           </h5>
         )}
         <div className="d-inline-block">
@@ -34,7 +36,9 @@ const Quote = ({ url, children, link, image }) => {
           )}
           {link && (
             <h5 className="text-center d-none d-sm-block mb-3">
-              <a href={url}>{link}</a>
+              <a href={url} target="_blank" rel="noopener noreferrer">
+                {link}
+              </a>
             </h5>
           )}
           {children}
