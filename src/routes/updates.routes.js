@@ -10,7 +10,7 @@ router.get('/2019-April-21', function(request, response) {
     if (err) {
       return console.log(err);
     }
-    data = data.replace(/\$OG_TITLE/g, 'Update - April 14, 2019');
+    data = data.replace(/\$OG_TITLE/g, 'Update - April 21, 2019');
     data = data.replace(/\$OG_DESCRIPTION/g, 'Easter update.');
     data = data.replace(
       /\$OG_URL/g,
