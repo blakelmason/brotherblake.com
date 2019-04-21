@@ -11,7 +11,7 @@ router.get('/2019-April-21', function(request, response) {
       return console.log(err);
     }
     data = data.replace(/\$OG_TITLE/g, 'Update - April 14, 2019');
-    data = data.replace(/\$OG_DESCRIPTION/g, 'The First Update!');
+    data = data.replace(/\$OG_DESCRIPTION/g, 'Easter update.');
     data = data.replace(
       /\$OG_URL/g,
       'http://www.brotherblake.com/updates/2019-April-21'
