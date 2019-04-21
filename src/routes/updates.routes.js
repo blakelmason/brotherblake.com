@@ -16,7 +16,6 @@ router.get('/2019-April-21', function(request, response) {
       /\$OG_URL/g,
       'http://www.brotherblake.com/updates/2019-April-21'
     );
-    data = data.replace(/\$OG_SITE_NAME/g, 'BrotherBlake.com');
     const result = data.replace(
       /\$OG_IMAGE/g,
       'https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/57774973_2122646601123669_6081006171613822976_o.jpg?_nc_cat=110&_nc_ht=scontent-lax3-2.xx&oh=9850df85dfa4142bd4f5ff28946dd399&oe=5D340213'
@@ -38,7 +37,6 @@ router.get('/2019-April-14', function(request, response) {
       /\$OG_URL/g,
       'http://www.brotherblake.com/updates/2019-April-14'
     );
-    data = data.replace(/\$OG_SITENAME/g, 'BrotherBlake.com');
     const result = data.replace(
       /\$OG_IMAGE/g,
       'https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/57125788_2108946819160314_2488181134186250240_o.jpg?_nc_cat=109&_nc_ht=scontent-lax3-2.xx&oh=eca1772a9faf3795827799df1e344145&oe=5D3F5D3C'
