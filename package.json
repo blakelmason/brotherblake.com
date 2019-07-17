@@ -4,7 +4,9 @@
   "description": "",
   "main": "prettier.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/blakelmason/brotherblake.com/issues"
   },
-  "homepage": "https://github.com/blakelmason/brotherblake.com#readme"
+  "homepage": "https://github.com/blakelmason/brotherblake.com#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
