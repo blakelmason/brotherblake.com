@@ -1,10 +1,10 @@
 import React from 'react'
 import { withRouter, Link } from 'react-router-dom'
 
-const Chapter = ({ name, link, match }) => {
+const Chapter = ({ name, book, chapter }) => {
   return (
     <div className="col">
-      <Link to={`${match.url}/${link}`}>
+      <Link to={`article/${book}/${chapter}`}>
         <div>{name}</div>
       </Link>
     </div>

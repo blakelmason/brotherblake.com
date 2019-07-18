@@ -1,24 +1,46 @@
-import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import React, { Component, Suspense } from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import './style.scss'
 
 import Header from './components/Header'
 import Home from './components/Home'
-import Scriptures from './components/Scriptures'
+import Scriptures from './components/Scriptures/Scriptures'
 import Topics from './components/Topics'
 
-function App() {
-  return (
-    <div className="mb-3">
-      <Router>
-        <Header />
-        <Route path="/" exact component={Home} />
-        <Route path="/scriptures" exact component={Scriptures} />
-        <Route path="/topics" exact component={Topics} />
-      </Router>
-    </div>
-  )
+class App extends Component {
+  loadArticle = () => {
+    const data = window.location.pathname.split('/')
+    const book = data[2]
+    const chapter = data[3]
+    const combined = book + chapter
+    const componentName = combined.toUpperCase()
+    console.log(combined)
+    const LazyComponent = React.lazy(() =>
+      import(`./components/Articles/${book}/${componentName}`)
+    )
+    return (
+      <Suspense fallback={<div>Loading</div>}>
+        <LazyComponent />
+      </Suspense>
+    )
+  }
+
+  render() {
+    return (
+      <div className="mb-3">
+        <Router>
+          <Header />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/scriptures" component={Scriptures} />
+            <Route path="/topics" component={Topics} />
+            <Route path="/article" render={() => this.loadArticle()} />
+          </Switch>
+        </Router>
+      </div>
+    )
+  }
 }
 
 export default App

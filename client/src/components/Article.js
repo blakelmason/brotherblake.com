@@ -39,9 +39,7 @@ const Article = ({ title, children, image, position, padding }) => {
               <div className="display-4">{title}</div>
             </div>
           </div>
-          <div className="row no-gutters p-3 p-lg-5">
-            <div className="col">{children}</div>
-          </div>
+          <div className="p-3 p-lg-5">{children}</div>
         </div>
       </div>
     </div>
