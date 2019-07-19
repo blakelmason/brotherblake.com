@@ -7,7 +7,7 @@ const breakpoints = [600, 992]
 
 const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`)
 
-const Article = ({ title, children, image, position, padding }) => {
+const Template = ({ title, children, image, position, padding, link }) => {
   return (
     <div className="container">
       <div className="row no-gutters border rounded shadow">
@@ -36,7 +36,9 @@ const Article = ({ title, children, image, position, padding }) => {
           </div>
           <div className="row no-gutters px-3 px-lg-5 pt-2 pt-lg-5">
             <div className="col">
-              <div className="display-4">{title}</div>
+              <div className="display-4">
+                {link ? <a href={link}>{title}</a> : title}
+              </div>
             </div>
           </div>
           <div className="p-3 p-lg-5">{children}</div>
@@ -46,4 +48,4 @@ const Article = ({ title, children, image, position, padding }) => {
   )
 }
 
-export default Article
+export default Template

@@ -7,6 +7,7 @@ import Header from './components/Header'
 import Home from './components/Home'
 import Scriptures from './components/Scriptures/Scriptures'
 import Topics from './components/Topics'
+import Loading from './components/Loading'
 
 class App extends Component {
   loadArticle = () => {
@@ -20,7 +21,7 @@ class App extends Component {
       import(`./components/Articles/${book}/${componentName}`)
     )
     return (
-      <Suspense fallback={<div>Loading</div>}>
+      <Suspense fallback={<Loading />}>
         <LazyComponent />
       </Suspense>
     )
@@ -28,7 +29,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="mb-3">
+      <div className="d-flex flex-column w-100">
         <Router>
           <Header />
           <Switch>

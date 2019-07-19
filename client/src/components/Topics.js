@@ -1,11 +1,13 @@
 import React from 'react'
 
-const Scriptures = () => {
+import Loading from './Loading'
+
+const Topics = () => {
   return (
-    <div>
-      <div>Nothing here yet.</div>
+    <div className="d-flex flex-fill justify-content-center align-items-center">
+      <Loading />
     </div>
   )
 }
 
-export default Scriptures
+export default Topics

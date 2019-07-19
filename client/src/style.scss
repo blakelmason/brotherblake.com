@@ -1,6 +1,17 @@
+html {
+  min-height: 100vh;
+  display: flex;
+}
+
 body {
   width: 100%;
   overflow-y: scroll;
+  display: flex;
+}
+
+#root {
+  width: 100%;
+  display: flex;
 }
 
 .active,

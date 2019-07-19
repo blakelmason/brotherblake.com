@@ -2,7 +2,7 @@ import React from 'react'
 
 import image from '../../images/scriptures.jpg'
 
-import Article from '../Article'
+import Template from '../Template'
 import Chapter from './Chapter'
 
 const noWrap = {
@@ -11,7 +11,7 @@ const noWrap = {
 
 const Scriptures = () => {
   return (
-    <Article title="Scriptures" image={image} position="50% 35%" padding>
+    <Template title="Scriptures" image={image} position="50% 35%" padding>
       <div className="row" style={noWrap}>
         <Work name="Old Testament" />
         <Work name="New Testament" />
@@ -23,7 +23,7 @@ const Scriptures = () => {
         </Work>
         <Work name="Pearl of Great Price" />
       </div>
-    </Article>
+    </Template>
   )
 }
 
