@@ -5,8 +5,10 @@ import gif from '../images/loading.gif'
 
 const Loading = () => {
   return (
-    <div>
-      <Image src={gif} fluid />
+    <div className="d-flex flex-fill justify-content-center align-items-center">
+      <div>
+        <Image src={gif} fluid />
+      </div>
     </div>
   )
 }

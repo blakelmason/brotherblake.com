@@ -12,13 +12,14 @@ import Loading from './components/Loading'
 class App extends Component {
   loadArticle = () => {
     const data = window.location.pathname.split('/')
-    const book = data[2]
-    const chapter = data[3]
+    const work = data[2]
+    const book = data[3]
+    const chapter = data[4]
     const combined = book + chapter
     const componentName = combined.toUpperCase()
     console.log(combined)
     const LazyComponent = React.lazy(() =>
-      import(`./components/Articles/${book}/${componentName}`)
+      import(`./components/Articles/${work}/${book}/${componentName}`)
     )
     return (
       <Suspense fallback={<Loading />}>
@@ -29,14 +30,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="d-flex flex-column w-100">
+      <div className="d-flex flex-column w-100 pb-3 pb-lg-5">
         <Router>
           <Header />
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/scriptures" component={Scriptures} />
             <Route path="/topics" component={Topics} />
-            <Route path="/article" render={() => this.loadArticle()} />
+            <Route path="/articles" render={() => this.loadArticle()} />
           </Switch>
         </Router>
       </div>

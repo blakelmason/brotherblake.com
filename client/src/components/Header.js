@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div className="mb-3">
+    <div className="mb-3 mb-lg-5">
       <div className="container">
         <div className="text-center m-3" style={{ fontSize: '1.25rem' }}>
           <Link to="/" className="brand">

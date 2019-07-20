@@ -15,10 +15,14 @@ const Scriptures = () => {
       <div className="row" style={noWrap}>
         <Work name="Old Testament" />
         <Work name="New Testament" />
-        <Work name="Book of Mormon" />
+        <Work name="Book of Mormon">
+          <Book name="Alma">
+            <Chapter work="bom" book="alma" chapter="51" />
+          </Book>
+        </Work>
         <Work name="Doctrine and Covenants">
-          <Book name="Doctrine and Covenants">
-            <Chapter name="Section 24" book="dc" chapter="24" />
+          <Book name="Section">
+            <Chapter work="dc" book="section" chapter="24" />
           </Book>
         </Work>
         <Work name="Pearl of Great Price" />
@@ -43,7 +47,7 @@ const Book = ({ name, children }) => {
     <>
       <div className="row">
         <div className="col">
-          <div className="h5">
+          <div className="h4">
             <u>{name}</u>
           </div>
         </div>
