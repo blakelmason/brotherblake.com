@@ -1,39 +1,72 @@
-import React from 'react'
-
-import image from '../../images/scriptures.jpg'
+import React, { Component, Suspense } from 'react'
+import { Switch, Route } from 'react-router-dom'
 
 import Template from '../Template'
 import Chapter from './Chapter'
+import Loading from '../Loading'
 
 const noWrap = {
   whiteSpace: 'nowrap'
 }
 
-const Scriptures = () => {
+class Scriptures extends Component {
+  loadArticle = () => {
+    const data = window.location.pathname.split('/')[2].split('-')
+    const [collection, book, chapter] = [data[0], data[1], data[2]]
+    const combined = (book + '_' + chapter).toUpperCase()
+    const LazyComponent = React.lazy(() =>
+      import(`../../pages/scriptures/${collection}/${book}/${combined}`)
+    )
+    return (
+      <Suspense fallback={<Loading />}>
+        <LazyComponent />
+      </Suspense>
+    )
+  }
+
+  render() {
+    return (
+      <Switch>
+        <Route path="/scriptures" exact component={Home} />
+        <Route path="/scriptures/:page" render={() => this.loadArticle()} />
+      </Switch>
+    )
+  }
+}
+
+const Home = () => {
   return (
-    <Template title="Scriptures" image={image} position="50% 35%" padding>
+    <Template
+      title="Scriptures"
+      image="https://i.imgur.com/2rhywQt.jpg"
+      position="50% 35%"
+      padding
+    >
       <div className="row" style={noWrap}>
-        <Work name="Old Testament" />
-        <Work name="New Testament" />
-        <Work name="Book of Mormon">
+        <Collection name="Old Testament" />
+        <Collection name="New Testament" />
+        <Collection name="Book of Mormon">
           <Book name="Alma">
-            <Chapter work="bom" book="alma" chapter="51" />
+            <Chapter collection="bom" book="alma" chapter="51" />
           </Book>
-        </Work>
-        <Work name="Doctrine and Covenants">
+          <Book name="3 Nephi">
+            <Chapter collection="bom" book="nephi3" chapter="18" />
+          </Book>
+        </Collection>
+        <Collection name="Doctrine and Covenants">
           <Book name="Section">
-            <Chapter work="dc" book="section" chapter="24" />
+            <Chapter collection="dc" book="section" chapter="24" />
           </Book>
-        </Work>
-        <Work name="Pearl of Great Price" />
+        </Collection>
+        <Collection name="Pearl of Great Price" />
       </div>
     </Template>
   )
 }
 
-const Work = ({ name, children }) => {
+const Collection = ({ name, children }) => {
   return (
-    <div className="col-auto">
+    <div className="col-12">
       <div className="border rounded p-2 bg-light d-inline-block h4 mb-0">
         <strong>{name}</strong>
       </div>
@@ -44,7 +77,7 @@ const Work = ({ name, children }) => {
 
 const Book = ({ name, children }) => {
   return (
-    <>
+    <div className="my-3">
       <div className="row">
         <div className="col">
           <div className="h4">
@@ -53,7 +86,7 @@ const Book = ({ name, children }) => {
         </div>
       </div>
       <div className="row">{children}</div>
-    </>
+    </div>
   )
 }
 
