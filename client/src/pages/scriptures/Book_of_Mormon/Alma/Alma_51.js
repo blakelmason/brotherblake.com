@@ -1,16 +1,16 @@
 import React from 'react'
 
 import Template from '../../../../components/Template'
-import Scripture from '../../../../components/Scripture'
+import Box from '../../../../components/Box'
 
-const ALMA51 = () => {
+const Alma_51 = () => {
   return (
     <Template
       image="https://i.imgur.com/2DwY8Lz.jpg"
       title="Alma 51"
-      link="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/51"
+      link="http://www.churchofjesuschrist.org/study/scriptures/bofm/alma/51"
     >
-      <Scripture>
+      <Box>
         <p>
           <strong>1</strong>&nbsp;&nbsp;And now it came to pass in the
           commencement of the twenty and fifth year of the reign of the judges
@@ -66,16 +66,16 @@ const ALMA51 = () => {
           were supported by those who sought power and authority over the
           people.
         </p>
-      </Scripture>
+      </Box>
       <p>
         Usually we think of one person seeking to be king, but verse 8 points
         out that many men were desirous to be "kings". I think the Book of
         Mormon is trying to warn against the principle of trying to become a
-        king, not just the one political figure who actually is able to become a
-        king. It is a warning against unrighteous dominion and for seeking power
+        king, not just the one political figure who actually is able to become
+        one. It is a warning against unrighteous dominion and for seeking power
         over others so that we may get gain and be "lords over God's heritage" (
         <a
-          href="https://www.churchofjesuschrist.org/study/scriptures/nt/1-pet/5.3?lang=eng#3"
+          href="http://www.churchofjesuschrist.org/study/scriptures/nt/1-pet/5.3?lang=eng#3"
           style={{ whiteSpace: 'nowrap' }}
           target="_blank"
           rel="noopener noreferrer"
@@ -88,4 +88,4 @@ const ALMA51 = () => {
   )
 }
 
-export default ALMA51
+export default Alma_51

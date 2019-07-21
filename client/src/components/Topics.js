@@ -1,12 +1,11 @@
 import React from 'react'
 
-import Loading from './Loading'
+import Template from './Template'
 
 const Topics = () => {
   return (
-    <div className="d-flex flex-fill justify-content-center align-items-center">
-      <Loading />
-    </div>
+    // eslint-disable-next-line
+    <Template title="Topics">Nothing here yet. Come back later. 😎👍</Template>
   )
 }
 

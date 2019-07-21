@@ -17,17 +17,20 @@ const Home = () => {
         The "Topics" section has information organized by topic.
       </p>
       <p>Below are links to the newest or recently updated sections.</p>
-      <br />
       <New
         date="July 20, 2019"
-        to="scriptures/bom-nephi3-18"
+        to="scriptures/Book_of_Mormon/3_Nephi/18"
         name="3 Nephi 18"
       />
-      <New date="July 18, 2019" to="scriptures/bom-alma-51" name="Alma 51" />
+      <New
+        date="July 18, 2019"
+        to="scriptures/Book_of_Mormon/Alma/51"
+        name="Alma 51"
+      />
       <New
         m0
         date="July 18, 2019"
-        to="scriptures/dc-section-24"
+        to="scriptures/Doctrine_and_Covenants/Section/24"
         name="Doctrine and Covenants 24"
       />
     </Template>

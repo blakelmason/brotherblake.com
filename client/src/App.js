@@ -5,7 +5,7 @@ import './style.scss'
 
 import Header from './components/Header'
 import Home from './components/Home'
-import Scriptures from './components/Scriptures/Scriptures'
+import Scriptures from './pages/scriptures/Scriptures'
 import Topics from './components/Topics'
 
 class App extends Component {

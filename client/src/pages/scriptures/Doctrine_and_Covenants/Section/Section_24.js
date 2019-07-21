@@ -1,17 +1,17 @@
 import React from 'react'
 
 import Template from '../../../../components/Template'
-import Scripture from '../../../../components/Scripture'
+import Box from '../../../../components/Box'
 
-const SECTION_24 = () => {
+const Section_24 = () => {
   return (
     <Template
       image="https://i.imgur.com/HQdG5bz.jpg"
       padding
       title="D&C 24"
-      link="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/24"
+      link="http://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/24"
     >
-      <Scripture>
+      <Box>
         <p className="mb-0">
           <strong>9</strong>&nbsp;&nbsp;And in temporal labors thou shalt not
           have strength, for this is not thy calling. Attend to thy calling and
@@ -19,7 +19,7 @@ const SECTION_24 = () => {
           scriptures, and continue in laying on of the hands and confirming the
           churches.
         </p>
-      </Scripture>
+      </Box>
       <p>
         In this scripture the Lord explained to Joseph that his calling is not
         in temporal affairs. I had never thought of this before: that some men
@@ -36,4 +36,4 @@ const SECTION_24 = () => {
   )
 }
 
-export default SECTION_24
+export default Section_24
