@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container">
         <div className="text-center m-3" style={{ fontSize: '1.25rem' }}>
           <Link to="/" className="brand">
-            BrotherBlake.com
+            brotherblake.com
           </Link>
         </div>
         <div />
