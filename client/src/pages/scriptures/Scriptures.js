@@ -46,12 +46,14 @@ const Home = () => {
       <div className="row" style={noWrap}>
         {reference.map(collection => {
           return (
-            <Collection name={collection.name}>
+            <Collection name={collection.name} key={collection.name}>
               {collection.books.map(book => {
                 return (
-                  <Book name={book.name}>
+                  <Book name={book.name} key={book.name}>
                     {book.chapters.map(chapter => {
-                      return <Chapter number={chapter} />
+                      return (
+                        <Chapter number={chapter} key={book.name + chapter} />
+                      )
                     })}
                   </Book>
                 )

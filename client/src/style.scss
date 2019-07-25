@@ -9,15 +9,37 @@ body {
   display: flex;
 }
 
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 #root {
   width: 100%;
   display: flex;
 }
 
-.display-font {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+.definition {
+  text-decoration: underline;
+  text-decoration-color: #189771 !important;
+}
+
+.text-teal {
+  color: #189771;
+}
+
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.translation {
+  text-decoration: underline;
+  text-decoration-color: #6610f2 !important;
+}
+
+.text-indigo {
+  color: #6610f2 !important;
 }
 
 .active,

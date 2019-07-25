@@ -2,7 +2,7 @@ import React from 'react'
 
 import Template from '../../../../components/Template'
 import Box from '../../../../components/Box'
-import QLink from '../../../../components/QLink'
+import Link2 from '../../../../components/Link2'
 
 const _3_NEPHI_18 = () => {
   return (
@@ -23,12 +23,11 @@ const _3_NEPHI_18 = () => {
       </Box>
       <p>
         In the Sermon on the Mount the Savior declared that we "are the light of
-        the world" and commanded "let your light so shine before men"{' '}
-        <QLink
-          text="Matthew 5 : 14 - 16"
-          href="http://www.churchofjesuschrist.org/study/scriptures/nt/matt/5.14-16?lang=eng#14"
-        />
-        .
+        the world" and commanded "let your light so shine before men" (
+        <Link2 href="http://www.churchofjesuschrist.org/study/scriptures/nt/matt/5.14-16?lang=eng#14">
+          Matthew 5 : 14 - 16
+        </Link2>
+        ).
       </p>
       <p className="mb-0">
         I have always thought this sounded self-centered, and wondered what the
@@ -40,7 +39,7 @@ const _3_NEPHI_18 = () => {
         most correct of any book on earth, and the keystone of our religion, and
         a man would get nearer to God by abiding by its precepts, than by any
         other book"{' '}
-        <QLink
+        <Link2
           text="Book of Mormon - Introduction"
           href="http://www.churchofjesuschrist.org/study/scriptures/bofm/introduction?lang=eng"
         />

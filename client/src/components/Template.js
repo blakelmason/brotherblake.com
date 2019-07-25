@@ -4,9 +4,7 @@ import { Component } from 'react'
 
 import { Image } from 'react-bootstrap'
 
-const breakpoints = [600, 992]
-
-const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`)
+import mq from './breakpoints'
 
 class Template extends Component {
   componentDidMount() {
@@ -16,15 +14,24 @@ class Template extends Component {
   render() {
     const { title, children, image, position, padding, link } = this.props
     return (
-      <div className="container">
-        <div className="row no-gutters border rounded shadow">
+      <div className="container px-0 px-md-3">
+        <div
+          className="row no-gutters bg-white"
+          css={{
+            [mq[0]]: {
+              border: '1px solid #dee2e6',
+              borderRadius: '.25rem',
+              boxShadow: '0 .5rem 1rem rgba(0,0,0,.15)'
+            }
+          }}
+        >
           <div className="col">
             <div className="row no-gutters">
               {image && (
                 <Image
                   src={image}
                   alt=""
-                  className="rounded-top border-bottom bg-dark"
+                  className="border-bottom bg-dark"
                   css={{
                     objectFit: 'cover',
                     width: '100%',
@@ -32,9 +39,11 @@ class Template extends Component {
                     height: 300,
                     padding: 0,
                     [mq[0]]: {
-                      height: 400
+                      borderTopLeftRadius: '.25rem',
+                      borderTopRightRadius: '.25rem'
                     },
                     [mq[1]]: {
+                      height: 400,
                       padding: padding ? '0px 200px 0px 200px' : 0
                     }
                   }}
