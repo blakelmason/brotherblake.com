@@ -14,19 +14,26 @@ class Template extends Component {
   render() {
     const { title, children, image, position, padding, link } = this.props
     return (
-      <div className="container px-0 px-md-3">
+      <div className="p-0 p-sm-3 p-md-4 p-lg-5">
         <div
           className="row no-gutters bg-white"
           css={{
+            disply: 'block',
+            width: '100%',
+            marginLeft: 'auto',
+            marginRight: 'auto',
             [mq[0]]: {
               border: '1px solid #dee2e6',
               borderRadius: '.25rem',
               boxShadow: '0 .5rem 1rem rgba(0,0,0,.15)'
+            },
+            [mq[2]]: {
+              maxWidth: 1200
             }
           }}
         >
           <div className="col">
-            <div className="row no-gutters">
+            <div>
               {image && (
                 <Image
                   src={image}
@@ -50,30 +57,22 @@ class Template extends Component {
                 />
               )}
             </div>
-            <div
-              className={`row no-gutters ${
-                link ? 'px-3 px-lg-5 pt-2 pt-lg-5' : 'px-3 px-lg-5 pt-2 pt-lg-5'
-              }`}
-            >
-              <div className="col">
-                <div>
-                  {link ? (
-                    <a
-                      href={link}
-                      style={{ fontSize: '2rem', fontWeight: 300 }}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {title}
-                    </a>
-                  ) : (
-                    <div className="display-4">{title}</div>
-                  )}
-                </div>
+            <div className="px-3 pb-3 pt-2 px-md-4 pb-md-4 pt-md-3 p-lg-5">
+              <div className="mb-4">
+                {link ? (
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ fontSize: '2rem', fontWeight: 300 }}
+                  >
+                    {title}
+                  </a>
+                ) : (
+                  <div className="display-4">{title}</div>
+                )}
               </div>
-            </div>
-            <div className={`p-3 ${link ? 'px-lg-5 pb-lg-5' : 'p-lg-5'}`}>
-              {children}
+              <div>{children}</div>
             </div>
           </div>
         </div>

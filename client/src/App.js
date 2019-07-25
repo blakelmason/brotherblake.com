@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <div
-        className="d-flex flex-column w-100 pb-sm-3 pb-lg-5"
+        className="d-flex flex-column w-100"
         css={{
           background: '#fff',
           [mq[0]]: {

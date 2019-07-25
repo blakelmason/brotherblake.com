@@ -10,7 +10,7 @@ import mq from './breakpoints'
 
 const Header = ({ error }) => {
   return (
-    <div className="mb-sm-3 mb-lg-5">
+    <div>
       <div
         className="container"
         css={{

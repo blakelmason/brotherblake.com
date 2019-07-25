@@ -43,22 +43,24 @@ const Home = () => {
       position="50% 35%"
       padding
     >
-      <div className="row" style={noWrap}>
-        {reference.map(collection => {
+      <div style={noWrap}>
+        {reference.map((collection, index) => {
           return (
-            <Collection name={collection.name} key={collection.name}>
-              {collection.books.map(book => {
-                return (
-                  <Book name={book.name} key={book.name}>
-                    {book.chapters.map(chapter => {
-                      return (
-                        <Chapter number={chapter} key={book.name + chapter} />
-                      )
-                    })}
-                  </Book>
-                )
-              })}
-            </Collection>
+            <div key={collection.name + index}>
+              <Collection name={collection.name}>
+                {collection.books.map(book => {
+                  return (
+                    <Book name={book.name} key={book.name}>
+                      {book.chapters.map(chapter => {
+                        return (
+                          <Chapter number={chapter} key={book.name + chapter} />
+                        )
+                      })}
+                    </Book>
+                  )
+                })}
+              </Collection>
+            </div>
           )
         })}
       </div>
@@ -71,12 +73,12 @@ const Collection = ({ name, children }) => {
     React.cloneElement(child, { collection: name })
   )
   return (
-    <div className="col-12">
+    <>
       <div className="border rounded p-2 bg-light d-inline-block h4 mb-0">
         <strong>{name}</strong>
       </div>
-      <div className="mx-2 mt-2 mb-4">{childrenWithProps}</div>
-    </div>
+      <div className="m-2">{childrenWithProps}</div>
+    </>
   )
 }
 
