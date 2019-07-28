@@ -18,6 +18,11 @@ const Home = () => {
       </p>
       <p>Below are links to the newest or recently updated sections.</p>
       <New
+        date="July 28, 2019"
+        to="scriptures/Old_Testament/Isaiah/2"
+        name="Isaiah 2"
+      />
+      <New
         date="July 25, 2019"
         to="scriptures/Old_Testament/Isaiah/1"
         name="Isaiah 1"
@@ -53,7 +58,7 @@ const Home = () => {
 const New = ({ m0, date, to, name }) => {
   return (
     <div className={`${m0 ? '' : 'mb-3'}`} style={{ whiteSpace: 'nowrap' }}>
-      <div>
+      <div className="h6 mb-0">
         <u>{date}</u>
       </div>
       <div>

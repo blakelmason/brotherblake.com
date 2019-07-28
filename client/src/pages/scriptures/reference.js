@@ -4,7 +4,7 @@ const reference = [
     books: [
       {
         name: 'Isaiah',
-        chapters: [1]
+        chapters: [1, 2]
       }
     ]
   },

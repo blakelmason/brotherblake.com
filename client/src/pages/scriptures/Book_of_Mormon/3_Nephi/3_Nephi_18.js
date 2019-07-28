@@ -24,7 +24,10 @@ const _3_NEPHI_18 = () => {
       <p>
         In the Sermon on the Mount the Savior declared that we "are the light of
         the world" and commanded "let your light so shine before men" (
-        <Link2 href="http://www.churchofjesuschrist.org/study/scriptures/nt/matt/5.14-16?lang=eng#14">
+        <Link2
+          nowrap
+          href="http://www.churchofjesuschrist.org/study/scriptures/nt/matt/5.14-16?lang=eng#14"
+        >
           Matthew 5 : 14 - 16
         </Link2>
         ).

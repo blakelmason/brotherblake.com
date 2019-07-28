@@ -104,7 +104,7 @@ const Chapter = ({ collection, book, number }) => {
   collection = collection.replace(/ /g, '_')
   book = book.replace(/ /g, '_')
   return (
-    <div className="col">
+    <div className="col-auto">
       <Link to={`scriptures/${collection}/${book}/${number}`}>
         <div style={{ fontSize: '1.25rem' }}>{number}</div>
       </Link>

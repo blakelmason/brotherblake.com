@@ -8,11 +8,11 @@ import Verse from '../../../../components/Verse'
 import Link2 from '../../../../components/Link2'
 import Image2 from '../../../../components/Image2'
 
-const Section_24 = () => {
+const Isaiah_1 = () => {
   return (
     <Template
       title="Isaiah 1"
-      link="http://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/24"
+      link="http://www.churchofjesuschrist.org/study/scriptures/ot/isa/1?lang=eng"
     >
       <p>
         Isaiah 1 can be thought of as a prologue or thesis for the rest of the
@@ -23,6 +23,15 @@ const Section_24 = () => {
         introductory chapter is a small example, but in other areas of Isaiah's
         writings this can limit our understanding if we are unaware of the
         intended organization of the presented ideas.
+      </p>
+      <p>
+        I found an excellent article which explains how Isaiah 1 is not the
+        commencement of his writings. The article is called{' '}
+        <Link2 href="https://rsc.byu.edu/archived/ascending-mountain-lord-temple-praise-and-worship-old-testament/great-jerusalem-temple">
+          The Great Jerusalem Temple Prophecy: Latter-day Context and Likening
+          unto Us
+        </Link2>
+        . See the section titled "Isaiah's Lead Prophecy".
       </p>
       <Box>
         <Verse number="1" last>
@@ -107,8 +116,8 @@ const Section_24 = () => {
         </Verse>
       </Box>
       <p>
-        Verse 9 foreshadows the destruction of Judah when the Assyrians attack.
-        Even though Judah is saved, only a remnant remain. See{' '}
+        Verse 9 is about the destruction of Judah when the Assyrians attack.
+        Even though Judah was saved, only a remnant remained. See{' '}
         <Link to="/topics/R/Remnant">Remnant</Link>.
       </p>
       <Box>
@@ -248,4 +257,4 @@ const Section_24 = () => {
   )
 }
 
-export default Section_24
+export default Isaiah_1
