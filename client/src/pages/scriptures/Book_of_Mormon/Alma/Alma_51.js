@@ -67,7 +67,7 @@ const Alma_51 = () => {
           people.
         </p>
       </Box>
-      <p>
+      <p className="mb-0">
         Usually we think of one person seeking to be king, but verse 8 points
         out that many men were desirous to be "kings". I think the Book of
         Mormon is trying to warn against the principle of trying to become a

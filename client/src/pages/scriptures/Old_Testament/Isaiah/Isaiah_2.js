@@ -36,15 +36,16 @@ const Isaiah_2 = () => {
         is being fulfilled by the temples we build, and especially the Salt Lake
         City temple. This idea has been emphasized so much that most church
         members seem unaware of the actual future fulfillment of this prophecy.
-        It is true that the temples of the Church of Jesus Christ of Latter-day
-        Saints are <em>parallels</em> to this prophecy, but their construction
-        is not the <em>fulfillment</em>. Now, it is good to "liken" Isaiah's
-        prophecies to ourselves, but we should first seek an understanding of
-        what Isaiah actually means in order to correctly "liken" them. Without
-        this understanding, the scriptures become confusing and the Spirit
-        becomes constricted. The Spirit can only testify of truth, and if we try
-        to shove square scriptural fulfillments into circular prophecies, His
-        influence will be stifled.
+        The actual fulfillment takes place at the second coming in Jerusalem, as
+        stated in verse 1. It is true that the temples of the Church of Jesus
+        Christ of Latter-day Saints are <em>parallels</em> to this prophecy, but
+        their construction is not the <em>fulfillment</em>. Now, it is good to
+        "liken" Isaiah's prophecies to ourselves, but we should first seek an
+        understanding of what Isaiah actually means in order to correctly
+        "liken" them. Without this understanding, the scriptures become
+        confusing and the Spirit becomes constricted. The Spirit can only
+        testify of truth, and if we try to shove square scriptural fulfillments
+        into circular prophecies, His influence will be stifled.
       </p>
       <p>
         The Church even made a movie called{' '}
@@ -58,9 +59,10 @@ const Isaiah_2 = () => {
         Wilford Woodruff declared that the building of the temples is the
         fulfillment of Isaiah's prophecy. This is not wrong, in fact it is good
         to try and find parallels in our life from scripture, but it is not
-        entirely true either. The true fulfillment of this prophecy has not yet
-        occurred, and will take place after Jesus Christ comes again and
-        personally reigns from Jerusalem. I found an excellent article titled{' '}
+        entirely true either. As stated earlier, the true fulfillment of this
+        prophecy has not yet occurred, and will take place after Jesus Christ
+        comes again and personally reigns from Jerusalem. I found an excellent
+        article titled{' '}
         <Link2 href="https://rsc.byu.edu/archived/ascending-mountain-lord-temple-praise-and-worship-old-testament/great-jerusalem-temple">
           The Great Jerusalem Temple Prophecy: Latter-day Context and Likening
           unto Us
@@ -68,8 +70,8 @@ const Isaiah_2 = () => {
         which provides further explanation.
       </p>
       <p>
-        Verse 2 mentions how the Lord's house will at the top of mountains and
-        above hills. Zechariah explains how this happens.
+        Verse 2 mentions how the Lord's house will be located at the top of
+        mountains and above hills. Zechariah explains how this happens.
       </p>
       <Box
         link={{
@@ -138,9 +140,9 @@ const Isaiah_2 = () => {
         for more details.
       </p>
       <p>
-        Isaiah then continues and teaches what will happen, and pleads for the
-        house of Jacob, or all of the Lord's people to walk in His light and to
-        follow Him.
+        Isaiah then continues and teaches what happens after the Savior comes,
+        and pleads for the house of Jacob, or all of the Lord's people, to walk
+        in His light and to follow Him.
       </p>
       <Box>
         <Verse number="4">
@@ -151,6 +153,111 @@ const Isaiah_2 = () => {
         </Verse>
         <Verse number="5" last>
           O house of Jacob, come ye, and let us walk in the light of the Lord.
+        </Verse>
+      </Box>
+      <p>
+        Next, Isaiah prophecies of all the wickedness in Israel before the Lord
+        comes.
+      </p>
+      <Box>
+        <Verse number="6">
+          ¶ Therefore thou hast forsaken thy people the house of Jacob, because
+          they be replenished from the east, and are soothsayers like the
+          Philistines, and they please themselves in the children of strangers.
+        </Verse>
+        <Verse number="7">
+          Their land also is full of silver and gold, neither is there any end
+          of their treasures; their land is also full of horses, neither is
+          there any end of their chariots:
+        </Verse>
+        <Verse number="8">
+          Their land also is full of idols; they worship the work of their own
+          hands, that which their own fingers have made:
+        </Verse>
+        <Verse number="9" last>
+          And the mean man boweth down, and the great man humbleth himself:
+          therefore forgive them not.
+        </Verse>
+      </Box>
+      <p>
+        Isaiah also focuses on their prideful nature, and how all those who are
+        lifted up in pride will be brought low. Just as all the land around
+        Jerusalem will be made low, so will all men who are lifted up in pride
+        be brought low at that day.
+      </p>
+      <Box>
+        <Verse number="10">
+          10 ¶ Enter into the rock, and hide thee in the dust, for fear of the
+          Lord, and for the glory of his majesty.
+        </Verse>
+        <Verse number="11">
+          The lofty looks of man shall be humbled, and the haughtiness of men
+          shall be bowed down, and the Lord alone shall be exalted in that day.
+        </Verse>
+        <Verse number="12">
+          For the day of the Lord of hosts shall be upon every one that is proud
+          and lofty, and upon every one that is lifted up; and he shall be
+          brought low:
+        </Verse>
+        <Verse number="13">
+          And upon all the cedars of Lebanon, that are high and lifted up, and
+          upon all the oaks of Bashan,
+        </Verse>
+        <Verse number="14">
+          And upon all the high mountains, and upon all the hills that are
+          lifted up,
+        </Verse>
+        <Verse number="15">
+          And upon every high tower, and upon every fenced wall,
+        </Verse>
+        <Verse number="16">
+          And upon all the ships of Tarshish, and upon all pleasant pictures.
+        </Verse>
+        <Verse number="17" last>
+          And the loftiness of man shall be bowed down, and the haughtiness of
+          men shall be made low: and the Lord alone shall be exalted in that
+          day.
+        </Verse>
+      </Box>
+      <p>
+        These things fulfill one of the teachings of the Savior in the Bible.
+      </p>
+      <Box
+        link={{
+          href:
+            'http://www.churchofjesuschrist.org/study/scriptures/nt/matt/23.12?lang=eng',
+          name: 'Matthew 23 : 12'
+        }}
+      >
+        <Verse number="12" last>
+          And whosoever shall exalt himself shall be abased; and he that shall
+          humble himself shall be exalted.
+        </Verse>
+      </Box>
+      <p>
+        Isaiah 2 ends with men forsaking their idols in embarrassment when the
+        Lord comes in power.
+      </p>
+      <Box nm>
+        <Verse number="18"> And the idols he shall utterly abolish.</Verse>
+        <Verse number="19">
+          And they shall go into the holes of the rocks, and into the caves of
+          the earth, for fear of the Lord, and for the glory of his majesty,
+          when he ariseth to shake terribly the earth.
+        </Verse>
+        <Verse number="20">
+          In that day a man shall cast his idols of silver, and his idols of
+          gold, which they made each one for himself to worship, to the moles
+          and to the bats;
+        </Verse>
+        <Verse number="21">
+          To go into the clefts of the rocks, and into the tops of the ragged
+          rocks, for fear of the Lord, and for the glory of his majesty, when he
+          ariseth to shake terribly the earth.
+        </Verse>
+        <Verse number="22" last>
+          Cease ye from man, whose breath is in his nostrils: for wherein is he
+          to be accounted of?
         </Verse>
       </Box>
     </Template>
