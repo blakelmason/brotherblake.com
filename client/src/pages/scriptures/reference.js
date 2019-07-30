@@ -16,6 +16,10 @@ const reference = [
     name: 'Book of Mormon',
     books: [
       {
+        name: '2 Nephi',
+        chapters: [26]
+      },
+      {
         name: 'Alma',
         chapters: [51]
       },

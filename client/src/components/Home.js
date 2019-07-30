@@ -18,6 +18,11 @@ const Home = () => {
       </p>
       <p>Below are links to the newest or recently updated sections.</p>
       <New
+        date="July 29, 2019"
+        to="/scriptures/Book_of_Mormon/2_Nephi/26"
+        name="2 Nephi 26"
+      />
+      <New
         date="July 28, 2019"
         to="scriptures/Old_Testament/Isaiah/2"
         name="Isaiah 2"
