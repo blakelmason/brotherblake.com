@@ -62,8 +62,8 @@ const Isaiah_1 = () => {
           <span className="translation">
             the donkey its master’s feeding trough:
           </span>{' '}
-          <T>"the ass his master’s crib:"</T> but Israel doth not know, my
-          people doth not consider.
+          <T>the ass his master’s crib:</T> but Israel doth not know, my people
+          doth not consider.
         </Verse>
         <Verse number="4">
           Ah sinful nation, a people laden with iniquity, a seed of evildoers,
@@ -137,10 +137,10 @@ const Isaiah_1 = () => {
         </Verse>
         <Verse number="13">
           Bring no more vain <span className="definition">oblations;</span>{' '}
-          <D>a thing presented or offered to God or a god.</D> incense is an
+          <D>A thing presented or offered to God or a god.</D> incense is an
           abomination unto me; the new moons and sabbaths, the calling of
           assemblies, I cannot <span className="translation">endure them;</span>{' '}
-          <T>"away with;"</T> it is iniquity, even the solemn meeting.
+          <T>away with;</T> it is iniquity, even the solemn meeting.
         </Verse>
         <Verse number="14">
           Your new moons and your appointed feasts my soul hateth: they are a

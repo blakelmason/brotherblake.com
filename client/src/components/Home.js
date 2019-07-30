@@ -19,6 +19,11 @@ const Home = () => {
       <p>Below are links to the newest or recently updated sections.</p>
       <New
         date="July 29, 2019"
+        to="/scriptures/Book_of_Mormon/Alma/59"
+        name="Alma 59"
+      />
+      <New
+        date="July 29, 2019"
         to="/scriptures/Book_of_Mormon/2_Nephi/26"
         name="2 Nephi 26"
       />

@@ -21,7 +21,7 @@ const reference = [
       },
       {
         name: 'Alma',
-        chapters: [51]
+        chapters: [51, 58, 59]
       },
       {
         name: '3 Nephi',

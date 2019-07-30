@@ -26,7 +26,7 @@ export const T = ({ children }) => {
 
 export const D = ({ children }) => {
   return (
-    <Tooltip color="#189771" letter="D">
+    <Tooltip color="#20c997" letter="D">
       <>
         <span className="text-teal">Definition: </span>
         {children}
