@@ -10,7 +10,8 @@ export const T = ({ children }) => {
   return (
     <Tooltip color="#6610f2" letter="T">
       <>
-        Translations are text changed from the{' '}
+        <span className="text-indigo">Translation:</span> Translations are text
+        changed from the{' '}
         <Link2 href="https://en.wikipedia.org/wiki/King_James_Version">
           KJV
         </Link2>
@@ -36,24 +37,22 @@ export const D = ({ children }) => {
 }
 
 const Tooltip = ({ children, color, letter }) => {
-  const [show1, showTooltip1] = useState(false)
-  const [show2, showTooltip2] = useState(false)
+  const [show, showTooltip] = useState(false)
   return (
     <>
       <div className="d-inline-block">
         <div
           onClick={() => {
-            show1 === true && show2 === true && showTooltip2(!show2)
-            showTooltip1(!show1)
+            showTooltip(!show)
           }}
           css={{
             borderRadius: '50%',
             border: '2px solid ' + color,
             width: 22,
             height: 22,
-            color: show1 ? '#fff' : color,
+            color: show ? '#fff' : color,
             cursor: 'pointer',
-            background: show1 ? color : '#fff',
+            background: show ? color : '#fff',
             transition: 'background .2s, color .2s',
             userSelect: 'none',
             '&:hover': {
@@ -66,7 +65,7 @@ const Tooltip = ({ children, color, letter }) => {
           <strong>{letter}</strong>
         </div>
       </div>
-      <Collapse in={show1}>
+      <Collapse in={show}>
         <div
           className="position-absolute rounded bg-white mx-2 mx-sm-4 shadow mt-1"
           css={{ border: '1px solid ' + color }}

@@ -20,7 +20,7 @@ const Section_24 = () => {
           churches.
         </p>
       </Box>
-      <p className="mb-0">
+      <p>
         In this scripture the Lord explained to Joseph that his calling is not
         in temporal affairs. I had never thought of this before: that some men
         do not receive great temporal blessings because that is not their

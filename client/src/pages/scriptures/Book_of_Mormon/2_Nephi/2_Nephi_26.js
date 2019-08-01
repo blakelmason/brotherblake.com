@@ -23,10 +23,12 @@ const _2_NEPHI_26 = () => {
           dwindled in unbelief shall not be forgotten.
         </Verse>
       </Box>
-      See the wikipedia article about{' '}
-      <Link2 href="https://en.wikipedia.org/wiki/Genocide_of_indigenous_peoples#Native_American_Genocide">
-        Native American Genocide
-      </Link2>
+      <p>
+        See the wikipedia article about{' '}
+        <Link2 href="https://en.wikipedia.org/wiki/Genocide_of_indigenous_peoples#Native_American_Genocide">
+          Native American Genocide
+        </Link2>
+      </p>
     </Template>
   )
 }

@@ -1,18 +1,17 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
 
 import Template from '../../../../components/Template'
 import Box from '../../../../components/Box'
-// import { T, D } from '../../../../components/Tooltips'
 import Verse from '../../../../components/Verse'
 import Link2 from '../../../../components/Link2'
-// import Image2 from '../../../../components/Image2'
 
 const Isaiah_2 = () => {
   return (
     <Template
       title="Isaiah 2"
       link="http://www.churchofjesuschrist.org/study/scriptures/ot/isa/2?lang=eng"
+      image="https://i.imgur.com/3hOkuKN.jpg"
+      position="50% 10%"
     >
       <Box>
         <Verse number="1">
@@ -35,17 +34,17 @@ const Isaiah_2 = () => {
         Many church leaders and teachers have taught that this prophecy was and
         is being fulfilled by the temples we build, and especially the Salt Lake
         City temple. This idea has been emphasized so much that most church
-        members seem unaware of the actual future fulfillment of this prophecy.
-        The actual fulfillment takes place at the second coming in Jerusalem, as
-        stated in verse 1. It is true that the temples of the Church of Jesus
-        Christ of Latter-day Saints are <em>parallels</em> to this prophecy, but
-        their construction is not the <em>fulfillment</em>. Now, it is good to
-        "liken" Isaiah's prophecies to ourselves, but we should first seek an
-        understanding of what Isaiah actually means in order to correctly
-        "liken" them. Without this understanding, the scriptures become
-        confusing and the Spirit becomes constricted. The Spirit can only
-        testify of truth, and if we try to shove square scriptural fulfillments
-        into circular prophecies, His influence will be stifled.
+        members seem unaware of the true future fulfillment of this prophecy.
+        The true fulfillment takes place at the second coming in Jerusalem, as
+        stated in verse 1.
+      </p>
+      <p>
+        The temples of the Church of Jesus Christ of Latter-day Saints are{' '}
+        <em>parallel</em> fulfillments to this prophecy, but their construction
+        is not <em>the</em> fulfillment. Now, it is good to "liken" Isaiah's
+        prophecies to ourselves, but we should falso seek an understanding of
+        the true fulfillment . Without this understanding, the scriptures can
+        become confusing, which then constricts the Spirit.
       </p>
       <p>
         The Church even made a movie called{' '}
@@ -58,11 +57,11 @@ const Isaiah_2 = () => {
         </Link2>{' '}
         Wilford Woodruff declared that the building of the temples is the
         fulfillment of Isaiah's prophecy. This is not wrong, in fact it is good
-        to try and find parallels in our life from scripture, but it is not
-        entirely true either. As stated earlier, the true fulfillment of this
-        prophecy has not yet occurred, and will take place after Jesus Christ
-        comes again and personally reigns from Jerusalem. I found an excellent
-        article titled{' '}
+        to try and find parallels in our life from scripture, but again, this is
+        not the true fulfillment. As stated earlier, the true fulfillment of
+        this prophecy has not yet occurred and will take place after Jesus
+        Christ comes again and personally reigns from Jerusalem. I found an
+        excellent article titled{' '}
         <Link2 href="https://rsc.byu.edu/archived/ascending-mountain-lord-temple-praise-and-worship-old-testament/great-jerusalem-temple">
           The Great Jerusalem Temple Prophecy: Latter-day Context and Likening
           unto Us
@@ -94,12 +93,13 @@ const Isaiah_2 = () => {
       <p />
       <p>
         This is a prophecy about how the land will physically change and
-        Jerusalem will be physically lifted above the area around it. It is
-        symbolic of the Lord's status: because he was lifted up on the cross, he
-        will be lifted and exalted above all men. Because he was judged of the
-        world, all nations will flow to him in righteous judgement and
-        adoration. His terrible condescension will be turned into a glorious
-        ascension. The Savior taught this to the people in the Book of Mormon.
+        Jerusalem will be physically lifted above the area around it at the
+        second coming. It is symbolic of the Lord's status: because he was
+        lifted up on the cross, he will be lifted and exalted above all men.
+        Because he was judged of the world, all nations will flow to him in
+        Jerusalem for righteous judgement and in adoration. His terrible
+        condescension will be turned into a glorious ascension. The Savior
+        taught this to the people in the Book of Mormon.
       </p>
       <Box
         link={{
@@ -225,7 +225,7 @@ const Isaiah_2 = () => {
       <Box
         link={{
           href:
-            'http://www.churchofjesuschrist.org/study/scriptures/nt/matt/23.12?lang=eng',
+            'http://www.churchofjesuschrist.org/study/scriptures/nt/matt/23.12?lang=eng#p12',
           name: 'Matthew 23 : 12'
         }}
       >

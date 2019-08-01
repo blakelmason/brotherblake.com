@@ -23,7 +23,7 @@ const Isaiah = () => {
         link={{
           name: '3 Nephi : 1 - 5',
           href:
-            'http://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/23.1-5?lang=eng'
+            'http://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/23.1-5?lang=eng#p1'
         }}
       >
         <Verse number="1">

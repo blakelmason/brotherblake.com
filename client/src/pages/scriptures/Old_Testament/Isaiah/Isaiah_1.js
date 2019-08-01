@@ -25,7 +25,7 @@ const Isaiah_1 = () => {
         intended organization of the presented ideas.
       </p>
       <p>
-        I found an excellent article which explains how Isaiah 1 is not the
+        I found an excellent article which supports that Isaiah 1 is not the
         commencement of his writings. The article is called{' '}
         <Link2 href="https://rsc.byu.edu/archived/ascending-mountain-lord-temple-praise-and-worship-old-testament/great-jerusalem-temple">
           The Great Jerusalem Temple Prophecy: Latter-day Context and Likening
@@ -161,7 +161,7 @@ const Isaiah_1 = () => {
         . The "sacrifices", "offerings", "new moons", "sabbaths", etc. refer to
         sacred ordinances, ceremonies, or gatherings. Our modern day equivalents
         would be sacrament meeting, temple ordinances, blessings, church
-        activities, 'etc'. Isaiah is emphasizing how they are the Lord's people
+        activities, etc. Isaiah is emphasizing how they are the Lord's people
         and they perform the outward motions, but their sacred activities have
         turned into "vain oblations" because they are ignoring what really
         matters. Verses 16 - 20 explain what really matters to the Lord, and

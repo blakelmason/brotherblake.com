@@ -1,14 +1,16 @@
 const fs = require('fs')
 
-const scripture = `18 And the idols he shall utterly abolish.
+const scripture = `16 But this is that which was spoken by the prophet Joel;
 
-19 And they shall go into the holes of the rocks, and into the caves of the earth, for fear of the Lord, and for the glory of his majesty, when he ariseth to shake terribly the earth.
+17 And it shall come to pass in the last days, saith God, I will pour out of my Spirit upon all flesh: and your sons and your daughters shall prophesy, and your young men shall see visions, and your old men shall dream dreams:
 
-20 In that day a man shall cast his idols of silver, and his idols of gold, which they made each one for himself to worship, to the moles and to the bats;
+18 And on my servants and on my handmaidens I will pour out in those days of my Spirit; and they shall prophesy:
 
-21 To go into the clefts of the rocks, and into the tops of the ragged rocks, for fear of the Lord, and for the glory of his majesty, when he ariseth to shake terribly the earth.
+19 And I will shew wonders in heaven above, and signs in the earth beneath; blood, and fire, and vapour of smoke:
 
-22 Cease ye from man, whose breath is in his nostrils: for wherein is he to be accounted of?`
+20 The sun shall be turned into darkness, and the moon into blood, before that great and notable day of the Lord come:
+
+21 And it shall come to pass, that whosoever shall call on the name of the Lord shall be saved.`
 
 const arr = scripture.split(/\n/g)
 

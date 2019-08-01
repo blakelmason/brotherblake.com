@@ -10,7 +10,12 @@ const reference = [
   },
   {
     name: 'New Testament',
-    books: []
+    books: [
+      {
+        name: 'Acts',
+        chapters: [2]
+      }
+    ]
   },
   {
     name: 'Book of Mormon',

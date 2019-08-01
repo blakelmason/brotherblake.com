@@ -74,10 +74,10 @@ const Collection = ({ name, children }) => {
   )
   return (
     <>
-      <div className="border rounded p-2 bg-light d-inline-block h4 mb-0">
+      <div className="border border-dark rounded p-2 d-inline-block h4 mb-0 shadow">
         <strong>{name}</strong>
       </div>
-      <div className="m-2">{childrenWithProps}</div>
+      <div>{childrenWithProps}</div>
     </>
   )
 }
@@ -88,14 +88,14 @@ const Book = ({ name, collection, children }) => {
   )
   return (
     <div className="my-3">
-      <div className="row">
+      <div className="row no-gutters">
         <div className="col">
-          <div className="h4">
-            <u>{name}</u>
+          <div className="border rounded shadow d-inline-block h5 p-2 mx-1">
+            {name}
           </div>
         </div>
       </div>
-      <div className="row">{childrenWithProps}</div>
+      <div className="row no-gutters">{childrenWithProps}</div>
     </div>
   )
 }
@@ -104,7 +104,7 @@ const Chapter = ({ collection, book, number }) => {
   collection = collection.replace(/ /g, '_')
   book = book.replace(/ /g, '_')
   return (
-    <div className="col-auto">
+    <div className="col-auto mx-2">
       <Link to={`scriptures/${collection}/${book}/${number}`}>
         <div style={{ fontSize: '1.25rem' }}>{number}</div>
       </Link>

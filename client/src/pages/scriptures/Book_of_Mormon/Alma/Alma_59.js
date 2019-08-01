@@ -31,25 +31,23 @@ const Alma_59 = () => {
         that supports this.
       </p>
       <Box>
-        <p>
+        <div className="mb-2">
           <strong>ANGER</strong>
-        </p>
-        <p>
-          A violent passion of the mind excited by a real or supposed injury;
-          usually accompanied with a propensity to take vengeance, or to obtain
-          satisfaction from the offending party.{' '}
-          <u>This passion however varies in degrees of violence, and in</u>{' '}
-          <span className="definition">ingenuous</span>{' '}
-          <D>
-            Noble; generous; as an ingenuous ardor or zeal; ingenuous
-            detestation of falsehood.
-          </D>{' '}
-          <u>
-            minds, may be attended only with a desire to reprove or chide the
-            offender
-          </u>
-          .
-        </p>
+        </div>
+        A violent passion of the mind excited by a real or supposed injury;
+        usually accompanied with a propensity to take vengeance, or to obtain
+        satisfaction from the offending party.{' '}
+        <u>This passion however varies in degrees of violence, and in</u>{' '}
+        <span className="definition">ingenuous</span>{' '}
+        <D>
+          Noble; generous; as an ingenuous ardor or zeal; ingenuous detestation
+          of falsehood.
+        </D>{' '}
+        <u>
+          minds, may be attended only with a desire to reprove or chide the
+          offender
+        </u>
+        .
       </Box>
       <p>
         This definition justifies anger with proper restraint and judgement.

@@ -64,7 +64,7 @@ const Letter = ({ letter, children }) => {
   return (
     <div className="col-12">
       <div
-        className="border rounded p-2 bg-light d-inline-block h4 mb-0 ml-3 text-center"
+        className="border border-dark rounded p-2 bg-light d-inline-block h4 mb-0 ml-3 text-center shadow"
         style={{ width: 40 }}
       >
         <strong>{letter}</strong>
