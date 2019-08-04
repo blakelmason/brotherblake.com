@@ -18,6 +18,11 @@ const Home = () => {
       </p>
       <p>Below are links to the newest or recently updated sections.</p>
       <New
+        date="August 3, 2019"
+        to="/scriptures/New_Testament/1_Corinthians/10"
+        name="1 Corinthians 10"
+      />
+      <New
         date="July 31, 2019"
         to="/scriptures/New_Testament/Acts/2"
         name="Acts 2"

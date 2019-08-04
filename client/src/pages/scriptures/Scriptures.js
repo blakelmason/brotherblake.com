@@ -90,7 +90,7 @@ const Book = ({ name, collection, children }) => {
     <div className="my-3">
       <div className="row no-gutters">
         <div className="col">
-          <div className="border rounded shadow d-inline-block h5 p-2 mx-1">
+          <div className="border rounded shadow d-inline-block h5 p-2 mx-1 bg-light">
             {name}
           </div>
         </div>

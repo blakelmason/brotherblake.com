@@ -14,6 +14,10 @@ const reference = [
       {
         name: 'Acts',
         chapters: [2]
+      },
+      {
+        name: '1 Corinthians',
+        chapters: [10]
       }
     ]
   },
