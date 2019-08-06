@@ -18,6 +18,11 @@ const Home = () => {
       </p>
       <p>Below are links to the newest or recently updated sections.</p>
       <New
+        date="August 5, 2019"
+        to="/topics/G/Gog_and_Magog"
+        name="Gog and Magog"
+      />
+      <New
         date="August 3, 2019"
         to="/scriptures/New_Testament/1_Corinthians/10"
         name="1 Corinthians 10"

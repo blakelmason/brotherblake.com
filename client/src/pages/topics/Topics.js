@@ -77,7 +77,7 @@ const Letter = ({ letter, children }) => {
 const Topic = ({ name, letter }) => {
   const linkName = name.replace(/ /g, '_')
   return (
-    <div className="mx-3 my-2 d-inline-block">
+    <div className="mx-3 my-2">
       <Link to={`topics/${letter}/${linkName}`}>
         <div style={{ fontSize: '1.25rem' }}>{name}</div>
       </Link>

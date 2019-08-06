@@ -28,6 +28,7 @@ const _2_NEPHI_26 = () => {
         <Link2 href="https://en.wikipedia.org/wiki/Genocide_of_indigenous_peoples#Native_American_Genocide">
           Native American Genocide
         </Link2>
+        .
       </p>
     </Template>
   )

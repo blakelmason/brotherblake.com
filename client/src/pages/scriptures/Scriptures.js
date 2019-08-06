@@ -73,12 +73,12 @@ const Collection = ({ name, children }) => {
     React.cloneElement(child, { collection: name })
   )
   return (
-    <>
+    <div className="my-5">
       <div className="border border-dark rounded p-2 d-inline-block h4 mb-0 shadow">
         <strong>{name}</strong>
       </div>
       <div>{childrenWithProps}</div>
-    </>
+    </div>
   )
 }
 

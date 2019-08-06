@@ -6,6 +6,15 @@ import { Image } from 'react-bootstrap'
 
 import mq from './breakpoints'
 
+const headerStyle = {
+  fontSize: '2.5rem',
+  fontWeight: 300,
+  lineHeight: 1.2,
+  [mq[1]]: {
+    fontSize: '3.5rem'
+  }
+}
+
 class Template extends Component {
   componentDidMount() {
     window.scrollTo(0, 0)
@@ -58,18 +67,18 @@ class Template extends Component {
               )}
             </div>
             <div className="px-3 pb-3 pt-2 px-md-4 pb-md-4 pt-md-3 p-lg-5">
-              <div className="mb-4">
+              <div className="mb-4 mb-lg-5">
                 {link ? (
                   <a
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ fontSize: '2rem', fontWeight: 300 }}
+                    css={headerStyle}
                   >
                     {title}
                   </a>
                 ) : (
-                  <div className="display-4">{title}</div>
+                  <div css={headerStyle}>{title}</div>
                 )}
               </div>
               <div>{children}</div>

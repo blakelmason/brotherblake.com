@@ -43,8 +43,7 @@ const Isaiah_2 = () => {
         <em>parallel</em> fulfillments to this prophecy, but their construction
         is not <em>the</em> fulfillment. Now, it is good to "liken" Isaiah's
         prophecies to ourselves, but we should falso seek an understanding of
-        the true fulfillment . Without this understanding, the scriptures can
-        become confusing, which then constricts the Spirit.
+        the true fulfillment.
       </p>
       <p>
         The Church even made a movie called{' '}
@@ -182,8 +181,8 @@ const Isaiah_2 = () => {
       <p>
         Isaiah also focuses on their prideful nature, and how all those who are
         lifted up in pride will be brought low. Just as all the land around
-        Jerusalem will be made low, so will all men who are lifted up in pride
-        be brought low at that day.
+        Jerusalem will be made low, all men who are lifted up in pride will be
+        brought low at that day.
       </p>
       <Box>
         <Verse number="10">
