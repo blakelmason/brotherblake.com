@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/core'
 import React, { Component, Suspense } from 'react'
 import { Switch, Route, Link } from 'react-router-dom'
 
@@ -5,6 +7,7 @@ import Template from '../../components/Template'
 import Loading from '../../components/Loading'
 
 import reference from './reference'
+import mq from '../../components/breakpoints'
 
 const noWrap = {
   whiteSpace: 'nowrap'
@@ -74,10 +77,29 @@ const Collection = ({ name, children }) => {
   )
   return (
     <div className="my-5">
-      <div className="border border-dark rounded p-2 d-inline-block h4 mb-0 shadow">
+      <div
+        className="border border-dark rounded py-2 px-3 d-inline-block mb-1 shadow"
+        style={{ fontSize: '1.6rem', fontWeight: 350 }}
+      >
         <strong>{name}</strong>
       </div>
-      <div>{childrenWithProps}</div>
+      <div className="pt-3">
+        <div
+          css={{
+            columnCount: 1,
+            columnGap: 48,
+            columnRule: '1px solid #ecebeb',
+            [mq[0]]: {
+              columnCount: 2
+            },
+            [mq[1]]: {
+              columnCount: 3
+            }
+          }}
+        >
+          {childrenWithProps}
+        </div>
+      </div>
     </div>
   )
 }
@@ -87,15 +109,11 @@ const Book = ({ name, collection, children }) => {
     React.cloneElement(child, { book: name, collection: collection })
   )
   return (
-    <div className="my-3">
-      <div className="row no-gutters">
-        <div className="col">
-          <div className="border rounded shadow d-inline-block h5 p-2 mx-1 bg-light">
-            {name}
-          </div>
-        </div>
+    <div className="mb-3" style={{ breakInside: 'avoid' }}>
+      <div className="border rounded shadow d-inline-block h5 p-2 bg-light">
+        {name}
       </div>
-      <div className="row no-gutters">{childrenWithProps}</div>
+      <div>{childrenWithProps}</div>
     </div>
   )
 }
@@ -104,7 +122,7 @@ const Chapter = ({ collection, book, number }) => {
   collection = collection.replace(/ /g, '_')
   book = book.replace(/ /g, '_')
   return (
-    <div className="col-auto mx-2">
+    <div className="mx-2 d-inline-block">
       <Link to={`scriptures/${collection}/${book}/${number}`}>
         <div style={{ fontSize: '1.25rem' }}>{number}</div>
       </Link>

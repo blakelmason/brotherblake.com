@@ -5,6 +5,10 @@ const reference = [
       {
         name: 'Isaiah',
         chapters: [1, 2]
+      },
+      {
+        name: 'Ezekiel',
+        chapters: [37]
       }
     ]
   },

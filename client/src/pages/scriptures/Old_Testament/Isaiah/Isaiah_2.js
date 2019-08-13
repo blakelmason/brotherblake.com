@@ -74,7 +74,7 @@ const Isaiah_2 = () => {
       <Box
         link={{
           href:
-            'http://www.churchofjesuschrist.org/study/scriptures/ot/zech/14.9-10?lang=eng',
+            'http://www.churchofjesuschrist.org/study/scriptures/ot/zech/14.9-10?lang=eng#p9',
           name: 'Zechariah 14 : 9 - 10'
         }}
       >
@@ -103,7 +103,7 @@ const Isaiah_2 = () => {
       <Box
         link={{
           href:
-            'http://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/27.13-16?lang=eng',
+            'http://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/27.13-16?lang=eng#p13',
           name: '3 Nephi 27 : 13 - 16'
         }}
       >

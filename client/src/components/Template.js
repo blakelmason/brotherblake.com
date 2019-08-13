@@ -67,7 +67,7 @@ class Template extends Component {
               )}
             </div>
             <div className="px-3 pb-3 pt-2 px-md-4 pb-md-4 pt-md-3 p-lg-5">
-              <div className="mb-4 mb-lg-5">
+              <div className="mt-2 mb-4 mt-lg-0 mb-lg-5">
                 {link ? (
                   <a
                     href={link}

@@ -1,16 +1,16 @@
 const fs = require('fs')
 
-const scripture = `16 But this is that which was spoken by the prophet Joel;
+const scripture = `23 Neither shall they defile themselves any more with their idols, nor with their detestable things, nor with any of their transgressions: but I will save them out of all their dwellingplaces, wherein they have sinned, and will cleanse them: so shall they be my people, and I will be their God.
 
-17 And it shall come to pass in the last days, saith God, I will pour out of my Spirit upon all flesh: and your sons and your daughters shall prophesy, and your young men shall see visions, and your old men shall dream dreams:
+24 And David my servant shall be king over them; and they all shall have one shepherd: they shall also walk in my judgments, and observe my statutes, and do them.
 
-18 And on my servants and on my handmaidens I will pour out in those days of my Spirit; and they shall prophesy:
+25 And they shall dwell in the land that I have given unto Jacob my servant, wherein your fathers have dwelt; and they shall dwell therein, even they, and their children, and their children’s children for ever: and my servant David shall be their prince for ever.
 
-19 And I will shew wonders in heaven above, and signs in the earth beneath; blood, and fire, and vapour of smoke:
+26 Moreover I will make a covenant of peace with them; it shall be an everlasting covenant with them: and I will place them, and multiply them, and will set my sanctuary in the midst of them for evermore.
 
-20 The sun shall be turned into darkness, and the moon into blood, before that great and notable day of the Lord come:
+27 My tabernacle also shall be with them: yea, I will be their God, and they shall be my people.
 
-21 And it shall come to pass, that whosoever shall call on the name of the Lord shall be saved.`
+28 And the heathen shall know that I the Lord do sanctify Israel, when my sanctuary shall be in the midst of them for evermore.`
 
 const arr = scripture.split(/\n/g)
 
